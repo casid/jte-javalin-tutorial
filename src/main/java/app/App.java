@@ -49,8 +49,8 @@ public class App {
     }
 
     private static TemplateEngine createTemplateEngine() {
-        DirectoryCodeResolver codeResolver = new DirectoryCodeResolver(Path.of("src", "main", "jte"));
         if (devSystem) {
+            DirectoryCodeResolver codeResolver = new DirectoryCodeResolver(Path.of("src", "main", "jte"));
             return TemplateEngine.create(codeResolver, ContentType.Html);
         } else {
             return TemplateEngine.createPrecompiled(Path.of("jte-classes"), ContentType.Html);
