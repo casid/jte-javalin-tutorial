@@ -45,7 +45,7 @@ public class App {
 
     private static void configure(JavalinConfig config) {
         JavalinJte.configure(createTemplateEngine());
-        config.addStaticFiles("/public");
+        config.addStaticFiles(staticFileConfig -> staticFileConfig.hostedPath = "/public");
     }
 
     private static TemplateEngine createTemplateEngine() {
