@@ -8,22 +8,22 @@
 <html lang="${page.getLang()}">
 <head>
     <title>${localize("COMMON_TITLE")}</title>
-    <link rel="stylesheet" href="/main.css">
-    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="/public/main.css">
+    <link rel="icon" href="/public/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="/index"><img id="logo" src="/img/logo.png" alt="Javalin Library"></a>
+            <a href="/index"><img id="logo" src="/public/img/logo.png" alt="Javalin Library"></a>
             <ul id="chooseLanguage">
                 <form>
                     <li>
-                        <button name="locale" value="de" style="background-image: url(/img/german.png);"></button>
+                        <button name="locale" value="de" style="background-image: url(/public/img/german.png);"></button>
                     </li>
                     <li>
-                        <button name="locale" value="en" style="background-image: url(/img/english.png);"></button>
+                        <button name="locale" value="en" style="background-image: url(/public/img/english.png);"></button>
                     </li>
                 </form>
             </ul>

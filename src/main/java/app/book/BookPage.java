@@ -5,7 +5,7 @@ import app.Page;
 import io.javalin.http.Context;
 
 public class BookPage extends Page {
-    public static final String PATH = "/books/:isbn";
+    public static final String PATH = "/books/{isbn}";
 
     public final Book book;
 
