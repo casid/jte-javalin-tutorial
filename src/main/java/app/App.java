@@ -33,6 +33,7 @@ public class App {
 
         app.before(Filters.handleLocaleChange);
         app.before(LoginController.ensureLoginBeforeViewingBooks);
+        app.get("/", ctx -> ctx.redirect(IndexPage.PATH));
         app.get(IndexPage.PATH, IndexController.serveIndexPage);
         app.get(BooksPage.PATH, BookController.serveBooksPage);
         app.get(BookPage.PATH, BookController.serveBookPage);
